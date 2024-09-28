@@ -87,11 +87,48 @@ a:hover {
   height: 40px;
   width: 80px;
   background-color: #4586d1;
-  font-family: "Monaco";
+  font-family: "monaco";
   font-size: 18px;
   color: white;
   border-style: none;
   border-radius: 17%;
+}
+
+#introduction-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 5px;
+  width: 70%;
+}
+
+#slogan {
+  font-family: "monaco";
+  font-size: 88px;
+  text-shadow: 0px 0px 5px black;
+  color: white;
+}
+
+#introduction {
+  width: 50%;
+  margin-left: 500px;
+  font-family: "monaco";
+  font-size: 18px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+#book-button {
+  height: 40px;
+  width: 120px;
+  margin-top: 40px;
+  margin-left: 70px;
+  background-color: #4586d1;
+  font-family: "monaco";
+  font-size: 18px;
+  color: white;
+  border-style: none;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px black;
 }
 
 .links {
