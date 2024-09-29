@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recomendations</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav id="navigation">
+      <div id="logo-container">
+        <img id="logo-img" src="images/logo.png" alt="">
+        <h1 id="logo-name">Traveling</h1>
+      </div>
+      <div id="links-container">
+        <a class="links" href="travel_recomendation.html">Home</a> 
+        <a class="links" href="about_us.html">About Us</a> 
+        <a class="links" href="">Contact Us</a> 
+      </div>
+        <div id="search-container">
+          <input id="search-input" type="text" placeholder="Enter your destionation"> 
+          <button id="search-button" type="button">Search</button>
+          <button id="clear-button" type="button">CLear</button>
+        </div>        
+    </nav>
+
+    <div id="social-icons">
+      <img class="social-img" src="images/facebook.png" alt=""> <br>
+      <img class="social-img" src="images/instagram.png" alt=""> <br>
+      <img class="social-img" src="images/twitter.png" alt=""> 
+    </div>
+
+    <h6 id="about">ABOUT US</h6>
+    
+    <div id="about-container">
+        <p id="welcome">
+            Welcome to our company! We are a team of prefessional individuals dedicatins to providing excelent services/products
+            to our customers. Our mission is provide a best experience for people traveling to different destionations
+            aroud the world. <br>
+            Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting 
+            our customers first and working together to achieve our goals. <br>
+            Feel free to explore our website to learn more about what we offer.
+        </p>
+        <div id="team">
+            <div id="team-title">OUR TEAM</div>
+            <div class="members">
+                <img class="member-img" src="images/user.png" alt="">
+                <p class="member-name">Celina Thomas</p>
+                <p class="member-description">Celina Thomas is responsible for...</p>
+                <p class="member-position">Team Lead</p>
+            </div>
+            <div class="members">
+                <img class="member-img" src="images/user.png" alt="">
+                <p class="member-name">John Doe</p>
+                <p class="member-description">John Doe is responsible for...</p>
+                <p class="member-position">CEO</p>
+            </div>
+            <div class="members">
+                <img class="member-img" src="images/user.png" alt="">
+                <p class="member-name">Mike Tysen</p>
+                <p class="member-description">Mike Tysen is responsible for...</p>
+                <p class="member-position">Delivery Head</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const search = document.getElementById("search-container")
+        search.style.visibility = "hidden"
+    </script>
+
+</body>
+</html>

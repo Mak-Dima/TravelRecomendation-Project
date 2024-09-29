@@ -2,7 +2,7 @@ body, html {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("images/home-page.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/home-page.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +95,7 @@ a:hover {
 }
 
 #introduction-container {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 20px;
   padding: 5px;
   width: 70%;
@@ -110,6 +110,7 @@ a:hover {
 
 #introduction {
   width: 50%;
+  margin-top: 70px;
   margin-left: 500px;
   font-family: "monaco";
   font-size: 18px;
@@ -118,10 +119,10 @@ a:hover {
 }
 
 #book-button {
-  height: 40px;
-  width: 120px;
-  margin-top: 40px;
-  margin-left: 70px;
+  height: 80px;
+  width: 180px;
+  margin-top: 50px;
+  margin-left: 160px;
   background-color: #4586d1;
   font-family: "monaco";
   font-size: 18px;
@@ -136,6 +137,98 @@ a:hover {
   width: 40px;
   margin-top: 200px;
   margin-right: 120px;
+}
+
+#about {
+  font-family: "monaco";
+  font-size: 66px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-bottom: 0px;
+}
+
+#about-container {
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#welcome {
+  width: 70%;
+  font-family: "monaco";
+  font-size: 16px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+  padding: 25px;
+  text-shadow: 0px 0px 15px 5px black;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#team {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#team-title {
+  display: inline-block;
+  width: 160px;
+  font-family: "monaco";
+  font-size: 46px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+.members {
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+  margin-left: 50px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.member-img {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.member-name {
+  display: inline;
+  font-family: "monaco";
+  font-size: 16px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+.member-description {
+  font-family: "monaco";
+  margin-left: 40px;
+  font-size: 16px;
+  text-shadow: 0px 0px 55px black;
+  color: whitesmoke;
+}
+
+.member-position {
+  width: 180px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 35px;
+  font-family: "monaco";
+  font-size: 20px;
+  text-shadow: 0px 0px 55px black;
+  text-align: center;
+  color: white;
+  background-color: #4586d1;
+  border-style: solid;
+  border-width: 0.1;
+  border-color: white;
+  border-radius: 2%;
 }
 
 .links {
