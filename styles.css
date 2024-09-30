@@ -17,6 +17,13 @@ a:hover {
   text-decoration: underline;
 }
 
+textarea {
+  resize: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: white;
+  color: white;
+}
+
 #navigation {
   display: flex; 
   width: 100%;
@@ -119,10 +126,10 @@ a:hover {
 }
 
 #book-button {
-  height: 80px;
-  width: 180px;
-  margin-top: 50px;
-  margin-left: 160px;
+  height: 60px;
+  width: 160px;
+  margin-top: 30px;
+  margin-left: 130px;
   background-color: #4586d1;
   font-family: "monaco";
   font-size: 18px;
@@ -178,6 +185,65 @@ a:hover {
   font-family: "monaco";
   font-size: 46px;
   text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+#contact-message {
+  width: 400px;
+  height: 200px;
+  float: left;
+  margin-top: 150px;
+  margin-left: 120px;
+}
+
+#contact-us {
+  font-family: "monaco";
+  font-size: 46px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+#get-in-touch {
+  font-family: "monaco";
+  font-size: 16px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+#contact-form {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  width: 500px;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+#form-button {
+  width: 505px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #4586d1;
+  font-family: "monaco";
+  font-size: 16px;
+  color: white;
+  box-shadow: none;
+  border-style: none;
+}
+
+.form-label {
+  display: inline-block;
+  font-family: "monaco";
+  font-size: 16px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+.form-input {
+  width: 495px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: white;
   color: white;
 }
 

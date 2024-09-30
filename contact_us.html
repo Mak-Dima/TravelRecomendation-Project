@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Travel Recomdations</title>
+    <title>Ttravel Recomendations</title>
     <link type="text/css" href="styles.css" rel="stylesheet">
   </head>
   <body>
@@ -22,8 +22,22 @@
           <input id="search-input" type="text" placeholder="Enter your destionation"> 
           <button id="search-button" type="button">Search</button>
           <button id="clear-button" type="button">CLear</button>
-        </div>        
+        </div>
     </nav>
+
+    <div id="contact-message">
+      <p id="contact-us">CONTACT US</p>
+      <p id="get-in-touch">Get in touch</p>
+    </div>
+    <form id="contact-form">
+      <label class="form-label" for="name">Name</label><br>
+      <input class="form-input" type="text" name="name" value=""><br>
+      <label class="form-label" for="email">Email</label><br>
+      <input class="form-input" type="text" name="email" value=""><br>
+      <label class="form-label" for="message">Message</label><br>
+      <textarea rows="15" cols="60"></textarea><br>
+      <input id="form-button" type="button" name="submit" value="Submit">
+    </form>
 
     <div id="social-icons">
       <img class="social-img" src="images/facebook.png" alt=""> <br>
@@ -31,19 +45,11 @@
       <img class="social-img" src="images/twitter.png" alt=""> 
     </div>
 
-      <div id="introduction-container">
-        <div id="slogan">
-          Explore Dream Destination
-        </div>
-        <p id="introduction">
-          It encourage exploration of unfaliliar rerritories, embracing diverse
-          cultures and landscapes, while pursuing the desired destination that captivies
-          the heart and ignites a sence of wonder.
-        </p> 
-        <button id="book-button" type="button">BOOK NOW</button>
-      </div>
-
   
-    <script type="text/javascript" src="travel_recomendation.js"></script>
+    <script>
+        const search = document.getElementById("search-container")
+        search.style.visibility = "hidden"
+    </script>
+
   </body>
 </html>
