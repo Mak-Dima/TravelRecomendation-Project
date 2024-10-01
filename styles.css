@@ -232,6 +232,47 @@ textarea {
   border-style: none;
 }
 
+#search-results {
+  visibility: hidden;
+  position: absolute;
+  top:115px;
+  right: 100px;
+  width: 500px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 5px 5px black;
+  overflow-y: scroll;
+}
+
+.result-img {
+  width: 500px;
+  height: 300px;
+}
+
+.result-name {
+  font-family: "monaco";
+  font-size: 26px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+.result-description {
+  font-family: "monaco";
+  font-size: 16px;
+  text-shadow: 0px 0px 55px black;
+  color: white;
+}
+
+.visit-button {
+  font-family: "monaco";
+  font-size: 16px;
+  color: white;
+  background-color: #4586d1;
+  width: 90px;
+  height: 30px;
+  margin-bottom: 50px;
+}
+
 .form-label {
   display: inline-block;
   font-family: "monaco";
