@@ -2,17 +2,34 @@ async function readJSON() {
   try {
     const response = await fetch("travel_recomendation_api.json")
     const data = await response.json()
+    countries = data.countries
+    delete data.countries
+    for (country of countries) {
+      data[country.name] = country.cities
+    }
     return data
   } catch (error) {
     console.log(error)
   }
 }
 
+function removeAllChild(node) {
+  if (node.firstChild) {
+    while (node.firstChild) {
+      node.removeChild(node.firstChild)
+    }
+  }
+}
+
 function seaerchInData(data, text) {
   let tmp = new Array()
 
+  if (text === "") {
+    return tmp
+  }
+
   for (let key in data) {
-    if (key.search(text) >= 0) {
+    if (key.toLowerCase().search(text) >= 0) {
       tmp.push(data[key])
     }
   }
@@ -29,9 +46,7 @@ function seaerchInData(data, text) {
   clearButton.onclick = (e) => {
     resultDiv = document.getElementById("search-results")
     resultDiv.style.visibility = "hidden"
-    while (resultDiv.firstChild) {
-      resultDiv.removeChild(resultDiv.firstChild)
-    }
+    removeAllChild(resultDiv)
     searchField.value = ""
   }
 
@@ -40,13 +55,15 @@ function seaerchInData(data, text) {
     const result = seaerchInData(data, text)
     resultDiv = document.getElementById("search-results")
 
+    removeAllChild(resultDiv)
+
     if (result.length === 0) {
+      resultDiv.style.visibility = "hidden"
       return
     }
 
     for (item of result) {
       for (let i = 0; i < item.length; i++) {
-        console.log(item[i])
         img = document.createElement("img")
         img.setAttribute("src", "images/" + item[i].imageUrl)
         img.classList.add("result-img")
