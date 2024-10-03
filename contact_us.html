@@ -35,7 +35,7 @@
       <label  class="form-label" for="email">Email</label><br>
       <input id="email" class="form-input" type="text"><br>
       <label class="form-label" for="message">Message</label><br>
-      <textarea rows="15" cols="60"></textarea><br>
+      <textarea id="text-area" rows="15" cols="60"></textarea><br>
       <input id="form-button" type="button" name="submit" value="Submit">
     </form>
 
@@ -55,6 +55,9 @@
           email = document.getElementById("email").value
           name = document.getElementById("name").value
           window.alert(`${name} your message sent to ${email}`)
+          document.getElementById("email").value = ""
+          document.getElementById("name").value = ""
+          document.getElementById("text-area").value = ""
         }
     </script>
 
