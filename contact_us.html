@@ -31,9 +31,9 @@
     </div>
     <form id="contact-form">
       <label class="form-label" for="name">Name</label><br>
-      <input class="form-input" type="text" name="name" value=""><br>
-      <label class="form-label" for="email">Email</label><br>
-      <input class="form-input" type="text" name="email" value=""><br>
+      <input id="name" class="form-input" type="text"><br>
+      <label  class="form-label" for="email">Email</label><br>
+      <input id="email" class="form-input" type="text"><br>
       <label class="form-label" for="message">Message</label><br>
       <textarea rows="15" cols="60"></textarea><br>
       <input id="form-button" type="button" name="submit" value="Submit">
@@ -49,6 +49,13 @@
     <script>
         const search = document.getElementById("search-container")
         search.style.visibility = "hidden"
+
+        submitButton = document.getElementById("form-button")
+        submitButton.onclick = () => {
+          email = document.getElementById("email").value
+          name = document.getElementById("name").value
+          window.alert(`${name} your message sent to ${email}`)
+        }
     </script>
 
   </body>
