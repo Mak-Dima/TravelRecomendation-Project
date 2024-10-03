@@ -99,13 +99,17 @@ function seaerchInData(data, text) {
         visitButton = document.createElement("button")
         visitButton.innerText = "Visit"
         visitButton.classList.add("visit-button")
-        localTime = getLocalTime(item[i].name)
-        time = document.createElement("p")
-        time.classList.add("result-description")
-        time.innerText = "loca time: " + localTime
         resultDiv.appendChild(img)
         resultDiv.appendChild(dataName)
-        resultDiv.appendChild(time)
+        try {
+          localTime = getLocalTime(item[i].name)
+          time = document.createElement("p")
+          time.classList.add("result-description")
+          time.innerText = "loca time: " + localTime
+          resultDiv.appendChild(time)
+        } catch (error) {
+          console.log(error)
+        }
         resultDiv.appendChild(description)
         resultDiv.appendChild(visitButton)
       }
