@@ -21,6 +21,29 @@ function removeAllChild(node) {
   }
 }
 
+function adjustTimeZone(loc) {
+  splited = loc.split(", ")
+  if (splited[1] === "Brazil") {
+    splited[0] = "Sao_Paulo"
+    splited[1] = "America"
+  } else if (splited[1] === "Japan") {
+    splited[0] = "Tokyo"
+    splited[1] = "Asia"
+  }
+  tmp = splited[0].split(" ")
+  newStr = tmp.map((elem) => elem[0].toUpperCase() + elem.slice(1))
+  splited[0] = newStr.join()
+  return splited
+}
+
+function getLocalTime(location) {
+  splited = adjustTimeZone(location)
+  newTimeZone = `${splited[1]}/${splited[0].replaceAll(",", "_")}`
+  const options = { timeZone: newTimeZone, hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+  const time = new Date().toLocaleTimeString('en-US', options);
+  return time
+}
+
 function seaerchInData(data, text) {
   let tmp = new Array()
 
@@ -76,8 +99,13 @@ function seaerchInData(data, text) {
         visitButton = document.createElement("button")
         visitButton.innerText = "Visit"
         visitButton.classList.add("visit-button")
+        localTime = getLocalTime(item[i].name)
+        time = document.createElement("p")
+        time.classList.add("result-description")
+        time.innerText = "loca time: " + localTime
         resultDiv.appendChild(img)
         resultDiv.appendChild(dataName)
+        resultDiv.appendChild(time)
         resultDiv.appendChild(description)
         resultDiv.appendChild(visitButton)
       }
